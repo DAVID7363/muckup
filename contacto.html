@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muckup - Contacto y reservas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1> Muckup</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="carrito.html">Carrito (<span class="contador">0</span>)</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Ingresar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form class="formulario" action="index.html">
+      <h2>Una Duda o un comentario</h2>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <form class="formulario" action="index.html">
+      <h2>Reserva tu pedido</h2>
+      <h5>aparte sus compras y pase a recogerlas a la tienda, sin tener que pagar en línea.</h5>
+      <label for="fecha">Fecha de recogida</label>
+      <input type="date" id="fecha" required>
+
+      <label for="hora">Horario</label>
+      <select id="hora" required>
+        <option value="">Elige una hora</option>
+        <option>Mañana (8:00 - 12:00)</option>
+        <option>Tarde (1:00 - 5:00)</option>
+      </select>
+
+      <button type="submit" class="btn">Reservar</button>
+    </form>
+  </main>
+
+  <footer>
+    <address>Muckup · Santa Tecla, La Libertad · info@Muckup.com</address>
+    <p>&copy; 2026 Muckup. </p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
